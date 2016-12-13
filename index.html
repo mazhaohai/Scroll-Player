@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>易学语文-课文内容图片</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/style.css" />
+
+		<style>
+			.isread{
+				color:lightseagreen
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">易学语文</h1>
+			<a class="mui-btn mui-btn-blue mui-btn-link mui-pull-right"><img src="http://img1.yqj.cn/w/images/yx/yx/head-back.png" alt="" /></a>
+		</header>
+		<div class="mui-content" style="padding-top:0px;">
+			<ul class="mui-table-view" style="margin-top:0px;">
+				<li class="mui-table-view-cell">
+					<div class="head-title">
+						【村庄变化图】<span>课文内容图片</span>
+					</div>
+					<div class="clearfix head-explain">
+						<p class="float-l">支持<span>《小学教材全解》</span></p>
+						<p class="float-l"><span>六年级</span><span>语文</span></p>
+						<p class="float-l"><span>人教版</span>（<span>上</span>）</p>
+					</div>
+				</li>
+			</ul>
+			<div class="interval-blank"></div>
+			<div id="playercon" class="mui-table-view mui-table-view-img" style="display: none;">
+				<div class="mui-card mui-card-img">
+					<div style="position:relative;">
+						<a>
+							<img onclick="startPlay()" src="http://img1.etutor.cn/w/images/yx/yx/chinese-img1.png">
+						</a>
+						<div onclick="startPlay()" class="video-play-icon"></div>
+						<div class="video-play-btn clearfix">
+							<div id="currenttime" class="float-l">00:00</div>
+							<div class="float-l">
+								<div class="video-play-setd">
+									<div class="video-play-set" style="width: 0%">
+										<img src="img/video-play.png" width="28" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="float-l" id="audio-duration">00:00</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="lyricPanel" style="overflow: auto;padding-left:15px;padding-right:15px;"></div>
+		</div>
+		<script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+		<script src="js/lyric.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+		</script>
+	</body>
+
+</html>

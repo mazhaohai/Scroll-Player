@@ -1,0 +1,1302 @@
+﻿/*公共部分*/
+body {
+    background: #fff;
+}
+
+header {
+    background: #fff !important;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+    .clearfix:after {
+        display: block;
+        visibility: hidden;
+        clear: both;
+        height: 0;
+        content: '.';
+        font-size: 0;
+    }
+
+/*空白间隔的div 的颜色*/
+.interval-blank {
+    height: 15px;
+    background: #EBEBEB;
+}
+
+.back-colorf2 {
+    background: #f2f2f2 !important;
+}
+
+.fontcolor-6cc {
+    color: #6cc;
+}
+
+.fontcolor-66 {
+    color: #666;
+}
+
+.Left-right {
+    padding: 11px 15px 11px 15px;
+}
+
+.margin-spacing {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*header开始*/
+header a:nth-child(1) {
+    color: #666;
+    font-size: 34px;
+}
+
+header a:nth-child(3) img {
+    width: 20px;
+    margin-top: 10px;
+}
+
+.head-title {
+    font-size: .9rem;
+    color: #333;
+    line-height: 1.6rem;
+}
+
+    .head-title span {
+        display: inline-block;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        padding: 0 10px;
+        border: 1px solid #ffa530;
+        border-radius: .2rem;
+        color: #ffa530;
+        font-size: .8rem;
+    }
+
+.head-explain {
+    margin-top: 6px;
+    font-size: .8rem;
+    color: #999;
+}
+
+    .head-explain p {
+        padding-right: .5rem;
+        font-size: .7rem;
+    }
+/*header结束*/
+
+
+/*汉字笔顺开始*/
+#articleBox {
+}
+
+#hzListBox {
+    padding: 7px;
+}
+
+    #hzListBox a {
+        width: 35px;
+        height: 35px;
+        display: block;
+        float: left;
+        text-decoration: none;
+        line-height: 35px;
+        border: #ccc 1px solid;
+        text-align: center;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #333;
+        background: #efefef;
+        font-family: "楷体";
+    }
+
+        #hzListBox a.current {
+            color: #66cccc;
+            border-color: #66cccc;
+        }
+
+        #hzListBox a:hover {
+            color: #66cccc;
+            border-color: #66cccc;
+            background: #fcc;
+        }
+
+
+
+#mainTable {
+    border-collapse: collapse;
+    border: 2px solid #66cccc;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+        margin-top: 15px;
+}
+
+    #mainTable tr td {
+        padding: 4px 8px 4px 8px;
+        border: 1px solid #9adddd;
+        font-family: Arial;
+        color: #999;
+    }
+
+        #mainTable tr td.hz_PinYin {
+            text-align: center;
+            font-family: Arial;
+            font-size: 16px;
+        }
+
+        #mainTable tr td.hz_Name {
+            width: 60px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1rem;
+        }
+
+        #mainTable tr td.hz_FirstLetter {
+            font-family: Arial;
+            font-size: 16px;
+            text-align: center;
+            width: 20px;
+            vertical-align: middle;
+        }
+
+        #mainTable tr td.hz_BuShou {
+            font-family: "楷体";
+            font-size: 16px;
+            width: 20px;
+            vertical-align: middle;
+        }
+
+            #mainTable tr td.hz_BuShou img {
+                width: 18px;
+                height: 18px;
+            }
+
+        #mainTable tr td.hz_BiHuaShu {
+            font-size: .8rem;
+            text-align: center;
+            vertical-align: middle;
+            height: 32px;
+        }
+
+        #mainTable tr td.hz_HanZi_JieGou {
+            font-size: .8rem;
+            text-align: center;
+            vertical-align: middle;
+            height: 32px;
+        }
+
+        #mainTable tr td.hz_label {
+            font-size: .8rem;
+            color: #333333;
+            background: #e6f6f6;
+            white-space: nowrap;
+        }
+
+        #mainTable tr td.hz_zy {
+            font-size: 0.8rem;
+            color: #6c6c6c;
+        }
+
+        #mainTable tr td.hz_zc {
+            font-size: 0.8rem;
+        }
+
+        #mainTable tr td.hz_zj {
+            font-size: .8rem;
+        }
+
+        #mainTable tr td.hz_qj {
+            font-size: 0.8rem;
+        }
+
+        #mainTable tr td.hz_ZaoZiFa {
+            font-size: 0.8rem;
+        }
+
+#sxBox {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    #sxBox img.img_shuxie {
+        width: 250px;
+        height: 250px;
+        border: none;
+    }
+
+    #sxBox span {
+        display: inline-block;
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.5em;
+        border: 1px solid #e5e5e5;
+        border-radius: 1.5rem;
+        color: #333333;
+        padding: 0 10px 0 10px;
+        margin-bottom: 10px;
+    }
+
+#zgBox {
+}
+
+    #zgBox p, #zmBox p, #zzBox p {
+        text-align: center;
+        font-size: 20px;
+        font-family: "楷体";
+        line-height: 1.5em;
+    }
+
+#zy2Box, #tjBox {
+    text-align: center;
+    padding: 10px;
+}
+
+    #zy2Box img, #tjBox img {
+        max-width: 250px;
+    }
+
+.loading_min {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url(../img/loading_min.gif) no-repeat;
+}
+/*汉字笔顺结束*/
+
+/*词语听写开始*/
+#EmptyBox {
+}
+
+    #EmptyBox p {
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+        line-height: 200px;
+    }
+
+        #EmptyBox p span {
+            font-weight: bold;
+            color: #66cccc;
+        }
+
+.title_h2 {
+    font-size: 14px;
+    color: #363636;
+    text-decoration: none;
+    line-height: 38px;
+    height: 38px;
+    display: block;
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #fff;
+    text-align: left;
+    margin-top: 0;
+    background: #f2f2f2;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#ci_box h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: normal;
+    padding: 0.5em 0em;
+    letter-spacing: 0.1em;
+}
+
+.txtContent {
+    padding: 10px;
+    line-height: 1.5em;
+    font-size: 16px;
+    color: #333;
+}
+
+    .txtContent span {
+        color: #66cccc;
+    }
+
+.ciListBox {
+    padding: 10px;
+}
+
+    .ciListBox a {
+        display: inline-block !important;
+        font-size: 1.5rem;
+        color: #555;
+        text-align: center;
+        padding: 0.3em 0.5em;
+        text-decoration: none;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+        .ciListBox a:hover {
+            background: #efefef;
+        }
+
+        .ciListBox a.current {
+            color: #66cccc;
+            border-color: #66cccc;
+        }
+
+#title_h2 {
+    position: relative;
+}
+
+#btn_tingxie {
+    font-size: 14px;
+    color: #66cccc;
+    border: 1px solid #66cccc;
+    background: #fcc;
+    display: block;
+    text-decoration: none;
+    line-height: 25px;
+    text-align: center;
+    width: 100px;
+    right: 10px;
+    top: 50%;
+    margin-top: -13px;
+    position: absolute;
+}
+
+.bsListBox {
+    text-align: center;
+}
+
+    .bsListBox .sxgif {
+        display: inline-block;
+        width: 140px;
+        margin: 10px 5px;
+    }
+
+.commTitleBox_3 {
+    position: relative;
+}
+
+.ciListBox {
+    padding: 10px 15px 10px 15px;
+}
+
+    .ciListBox a {
+        display: inline-block !important;
+        font-size: 1.1rem;
+        color: #555;
+        text-align: center;
+        padding: 0.2em 0.4em;
+        text-decoration: none;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+        .ciListBox a:hover {
+            background: #efefef;
+        }
+/*按钮样式*/
+#btn_startTX, #btn_stopTX {
+    display: block;
+    background: #66CCCC;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    height: 2.5rem;
+    bottom: 0;
+    width: 100%;
+}
+/*按钮样式*/
+
+#defaultBox {
+}
+
+#tingxieBox {
+    display: none;
+}
+
+#txList ul {
+    margin: 0;
+    padding: 0;
+}
+
+#txList li {
+    text-align: center;
+    display: none;
+    background: #fff;
+    margin: 10px;
+    border: 3px double #ccc;
+}
+
+    #txList li .top_Box {
+        position: relative;
+        padding: 0 30px;
+    }
+
+    #txList li span.pinyin {
+        font-family: Arial;
+        font-size: 18px;
+        color: #66cccc;
+        line-height: 10em;
+    }
+
+    #txList li.current {
+        display: block;
+    }
+
+#txList .btn_prev, #txList .btn_next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -14px;
+    left: 5px;
+    width: 26px;
+    height: 28px;
+    text-indent: -99999px;
+    background: url(../img/btn_next_blue.png) no-repeat;
+    text-decoration: none;
+}
+
+#txList .btn_next {
+    left: auto;
+    right: 5px;
+    background-position: -26px 0;
+}
+
+#txList li .top_Box .indexBox {
+    width: 60px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    top: 5px;
+    text-align: center;
+    height: 20px;
+}
+
+    #txList li .top_Box .indexBox span {
+        font-size: 12px;
+        color: #fff;
+        line-height: 20px;
+    }
+
+#EmptyBox {
+}
+
+    #EmptyBox p {
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+        line-height: 200px;
+    }
+
+        #EmptyBox p span {
+            font-weight: bold;
+            color: #66cccc;
+        }
+
+#txSetBox {
+    padding-left: 10px;
+}
+
+    #txSetBox table tr td {
+        padding: 10px 2px;
+    }
+
+    #txSetBox .lbl {
+        text-align: right;
+        font-size: 14px;
+        color: #333;
+        word-break: keep-all;
+        white-space: nowrap;
+    }
+
+    #txSetBox .select_ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #txSetBox .select_ul li {
+            list-style: none;
+            padding: 0 .8em;
+            height: 28px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+            color: #333;
+            background: #fff;
+            line-height: 30px;
+            text-align: center;
+            float: left;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+            #txSetBox .select_ul li.current {
+                border-bottom: 2px solid #66cccc;
+                font-weight: bold;
+            }
+
+.bs_Box {
+    border-top: 3px double #ccc;
+    display: none;
+}
+
+    .bs_Box .sxgif {
+        display: inline-block;
+        width: 140px;
+        margin: 10px 5px;
+    }
+/*词语听写结束*/
+
+
+
+/*词语听写兰*/
+.explain {
+    font-size: 18px;
+    color: #7ed2d2;
+    font-size: 1rem;
+}
+
+.sideline {
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    padding-bottom: 15px;
+}
+
+.Line-bottom {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.Line-top {
+    border-top: 1px solid #EBEBEB;
+}
+
+.words {
+    margin: 0px 15px 10px 15px;
+}
+
+    .words ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+.text p {
+    text-indent: 24px;
+    line-height: 24px;
+    color: #666;
+    font-size: .8rem;
+}
+
+.pic-xian {
+    border: 1px solid #e5e5e5;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 7px rgba(0,0,0,.1);
+}
+
+    .pic-xian img {
+        border-radius: 5px;
+    }
+
+.words {
+    margin: 0px 15px 10px 15px;
+}
+
+    .words ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .words ul li {
+            width: 50%;
+            float: left;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+
+/*video 部分 */
+.video-view::before, .video-view::after {
+    content: "";
+    height: 0;
+}
+
+.video-view .mui-card-videoimg {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    position: relative;
+}
+
+    .video-view .mui-card-videoimg a img {
+        width: 100%;
+    }
+
+    .video-view .mui-card-videoimg img.icon-pause {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        left: 50%;
+        top: 50%;
+        margin-left: -2.5rem;
+        margin-top: -2.5rem;
+    }
+/*只有图片的展示块*/
+.mui-table-view-img::after {
+    content: "";
+    height: 0;
+}
+
+.mui-table-view-img .mui-card-img {
+    border: 0;
+    border-radius: 0;
+}
+
+    .mui-table-view-img .mui-card-img a {
+        width: 100%;
+        display: block;
+        border: 1px solid #e5e5e5;
+        margin: 15px 0;
+        border-radius: .4rem;
+        box-shadow: 0px 5px 7px rgba(0,0,0,.1);
+    }
+
+.mui-card-img a img {
+    width: 100%;
+    display: block;
+    border-radius: .2rem;
+    margin: 0;
+    padding: 0;
+}
+/* 时间轴式的 模块*/
+.time-card {
+    margin-right: .8rem;
+    position: relative;
+    border-left: 1px solid #e5e5e5;
+    margin-left: 15px;
+}
+
+    .time-card .time-card-iconimg {
+        width: 16px;
+        height: 14px;
+        position: absolute;
+        top: 1.1rem;
+        left: -.4rem;
+    }
+
+    .time-card .time-card-title {
+        color: #66cccc;
+        font-size: 1rem;
+        padding: 1rem 0 0.5rem 1.4rem;
+    }
+
+    .time-card .time-card-content {
+        border: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+.time-card-content::before {
+    content: "";
+    border: .4rem solid red;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: 34px;
+    left: 17px;
+}
+
+.time-card .time-card-content ul .mui-table-view-cell::after {
+    height: 0 !important;
+}
+
+.time-card .time-card-content ul li h6 {
+    font-size: .8rem;
+    color: #333;
+}
+
+.time-card .time-card-content ul li p {
+    font-size: .7rem;
+    color: #999;
+}
+/* 英语中如时间轴样的模块 */
+.blank-title {
+    background: #f2f2f2;
+    line-height: 2rem;
+    font-size: .9rem;
+    color: #999;
+    margin-left: 15px;
+}
+
+.english-time-card:after {
+    content: "";
+    height: 0;
+}
+
+.english-time-card > li:after {
+    content: "";
+    left: 0;
+}
+
+.english-time-card > li > h5 {
+    border-left: 5px solid #66cccc;
+    text-indent: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.english-time-card > li > p {
+    font-size: .9rem;
+    color: #666;
+    line-height: 1.4rem;
+    margin-top: .6rem;
+    margin-bottom: .4rem;
+    padding-left: 10px;
+}
+
+.english-time-card > li > div > p {
+    color: #999;
+    font-size: .8rem;
+    padding-left: 10px;
+}
+
+
+/*单词同步 学习内容块*/
+.word-study-card {
+    margin-top: 15px;
+    box-shadow: 0 5px 7px rgba(0,0,0,.1);
+}
+
+.word-study-card-img {
+    background: #fff !important;
+    padding: 0 !important;
+}
+
+    .word-study-card-img > div:nth-child(1) {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .word-study-card-img::after {
+        content: "";
+        height: 0;
+    }
+
+    .word-study-card-img > div > img {
+        width: 100%;
+        display: block;
+    }
+
+    .word-study-card-img > div:nth-child(2) {
+        margin-top: 0 !important;
+        border-top: 1px solid #e5e5e5;
+    }
+
+        .word-study-card-img > div:nth-child(2) div {
+            padding: 0 15px;
+            margin-bottom: .8rem;
+        }
+
+    .word-study-card-img .word-sound a {
+        color: #333;
+    }
+
+        .word-study-card-img .word-sound a span.word-study-words {
+            border-bottom: 2px solid #6cc;
+            font-size: 1.2rem;
+            padding-bottom: 1px;
+            line-height: 24px;
+            margin-right: 6px;
+        }
+
+    .word-study-card-img div .word-under:after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        content: '';
+        margin-left: 15px;
+        margin-right: 15px;
+        -webkit-transform: scaleY(.5);
+        transform: scaleY(.5);
+        background-color: #e5e5e5;
+    }
+
+    .word-study-card-img div .word-under:last-child::after {
+        content: "";
+        height: 0;
+    }
+
+    .word-study-card-img div .word-under p {
+        padding-bottom: .4rem;
+    }
+
+        .word-study-card-img div .word-under p:nth-child(1) {
+            font-size: .9rem;
+            color: #333;
+        }
+
+        .word-study-card-img div .word-under p:nth-child(2) {
+            font-size: .9rem;
+            color: #999;
+        }
+
+/*单词学习 pager切换*/
+.words-pager {
+    padding-left: 0;
+}
+
+    .words-pager li {
+        height: 60px;
+        float: left;
+        line-height: 60px;
+        list-style: none;
+        text-align: center;
+    }
+
+        .words-pager li > a {
+            border: 0;
+            padding: 0;
+            color: #6cc;
+        }
+
+    .words-pager .pager-disabled a {
+        color: #999;
+    }
+
+.type-title {
+    font-size: 1rem;
+    position: relative;
+    background: #fff;
+    text-align: center;
+    margin: 15px;
+    padding: 0 10px;
+}
+
+    .type-title:after {
+        position: absolute;
+        right: 0;
+        bottom: 8px;
+        left: 0;
+        height: 1px;
+        content: '';
+        -webkit-transform: scaleY(.5);
+        transform: scaleY(.5);
+        background-color: #c8c7cc;
+    }
+
+.text-indent2 {
+    text-indent: 1.2rem;
+    font-size: .8rem;
+    color: #666;
+}
+
+p.text-indent0 {
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+/*播放长度按钮*/
+.video-play-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(0,0,0,.2);
+}
+
+    .video-play-btn > div {
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+    }
+
+        .video-play-btn > div:nth-child(1), .video-play-btn > div:nth-child(3) {
+            width: 20%;
+        }
+
+        .video-play-btn > div:nth-child(2) {
+            width: 54%;
+            margin: 0 3%;
+        }
+
+    .video-play-btn .video-play-setd {
+        height: 4px;
+        background: #f1f1f1;
+        border-radius: 10px;
+        line-height: 4px;
+        width: 100%;
+        margin-top: 14px;
+    }
+
+    .video-play-btn .video-play-set {
+        position: relative;
+        height: 4px;
+        background: #6cc;
+        border-radius: 10px;
+        line-height: 4px;
+        margin-top: 0px;
+    }
+
+        .video-play-btn .video-play-set > img {
+            position: absolute;
+            right: -17px;
+            bottom: -12px;
+        }
+
+.video-play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    background: url(http://img1.etutor.cn/w/images/yx/yx/icon-pause.png) no-repeat;
+}
+
+.video-play-stop {
+    background: url(http://img1.etutor.cn/w/images/yx/yx/icon-play.png) no-repeat !important;
+}
+
+.mui-preview-image.mui-fullscreen {
+    position: fixed;
+    z-index: 20;
+    background-color: #000;
+}
+
+.mui-preview-header,
+.mui-preview-footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.mui-preview-header {
+    height: 44px;
+    top: 0;
+}
+
+.mui-preview-footer {
+    height: 50px;
+    bottom: 0px;
+}
+
+.mui-preview-header .mui-preview-indicator {
+    display: block;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    margin: 15px auto 4;
+    width: 70px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.mui-preview-image {
+    display: none;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+    .mui-preview-image.mui-preview-in {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+
+    .mui-preview-image.mui-preview-out {
+        background: none;
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+    }
+
+        .mui-preview-image.mui-preview-out .mui-preview-header,
+        .mui-preview-image.mui-preview-out .mui-preview-footer {
+            display: none;
+        }
+
+.mui-zoom-scroller {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    -webkit-backface-visibility: hidden;
+}
+
+.mui-zoom {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+    width: 100%;
+}
+
+.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+    display: inline-table;
+}
+
+.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mui-preview-loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+    .mui-preview-loading.mui-active {
+        display: block;
+    }
+
+    .mui-preview-loading .mui-spinner-white {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        height: 50px;
+        width: 50px;
+    }
+
+.mui-preview-image img.mui-transitioning {
+    -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+p img {
+    max-width: 100%;
+    height: auto;
+}
+#header{
+    display:none;
+}
+
+
+/*解决前后台ckedtor样式不一致问题
+引用方式 @import url(phone_fixckStyle.css);
+*/
+.fixck {
+    font-family: "宋体";
+    font-size: 14px !important;
+    color: #222 !important;
+    line-height: normal !important;
+}
+ 
+.fixck p {
+    line-height: 1.8;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+	text-shadow: 0 1px 1px #fff;
+	text-indent:2em;
+}
+ 
+.fixck a {
+    text-decoration: underline !important;
+    color: #00E !important;
+}
+ 
+.fixck ul,
+.fixck ol {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+.fixck ul {
+    list-style: disc outside none !important;
+}
+.fixck ol {
+    list-style: decimal outside none !important;
+}
+.fixck li {
+    display: list-item !important;
+}
+ 
+.fixck h1 {
+    font-weight: bold !important;
+    font-size: 32px !important;
+    margin: 21px 0 !important;
+}
+.fixck h2 {
+    font-weight: bold !important;
+    font-size: 24px !important;
+    margin: 19px 0 !important;
+}
+.fixck h3 {
+    font-weight: bold !important;
+    font-size: 19px !important;
+    margin: 18px 0 !important;
+}
+.fixck h4 {
+    font-weight: bold !important;
+    font-size: 16px !important;
+    margin: 21px 0 !important;
+}
+.fixck h5 {
+    font-weight: bold !important;
+    font-size: 13px !important;
+    margin: 22px 0 !important;
+}
+.fixck h6 {
+    font-weight: bold !important;
+    font-size: 11px !important;
+    margin: 24px 0 !important;
+}
+
+.fixck object,.fixck embed,.fixck img
+{
+    max-width:300px !important;
+    height:auto !important;	
+}
+.fixck table
+{
+	width:100% !important;	
+	border:1px solid #ccc !important;	
+	border-collapse:collapse !important;	
+	border-spacing:0 !important;	
+}
+.fixck table tr th
+{
+	border:1px solid #ccc !important;	
+	padding:5px !important;	
+	text-align:center !important;	
+	background:#efefef !important;
+	font-size:14px !important;	
+}
+
+.fixck table tr td
+{
+	border:1px solid #ccc !important;	
+	padding:5px !important;	
+	text-align:center !important;	
+	font-size:14px !important;	
+	line-height:1.5em !important;	
+}
+/*解决前后台ckedtor样式不一致问题*/
+
+.answerBox
+{
+	border:1px solid #ccc;
+	margin-bottom:10px;
+}
+.answerBox h4
+{
+	height:2.5em;
+	font-size:16px;
+	color:#333;
+	background:#efefef;
+	line-height:2.5em;
+	padding-left:1em;
+	margin:0 !important;
+	cursor:pointer;
+
+    white-space : nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+.answerBox p
+{
+	margin-left:10px;
+	margin-right:10px;
+    font-size:16px;
+    display:none;
+}
+.answerBox p.guaguaBox
+{
+	background:#fef;
+}
+
+audio.mp3Audio
+{
+    width:300px;
+    height:30px;
+    display:block;
+}
+
+#down_info{
+    display:none;
+}
